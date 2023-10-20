@@ -33,7 +33,7 @@ class Juego{
       //text("Tiempo:" + this.tiempo, 550, 50 ); No lo puse en el juego porque creo que es mejor que quede en la incognita de cuanto falta para terminar :-)
       this.contador += 1;
       this.a += 0.00005;
-      if (random(1) < 0.0005 + this.a && this.contador >= 30) {
+      if (random(1) < 0.0005 + this.a && this.contador >= 40) {
         this.Caja.push(new Obstaculo());
         this.contador = 0;
       }
@@ -88,12 +88,12 @@ class Juego{
     }
   }
   comienzo(){
-    if (dist(mouseX, mouseY, width/2, height/3) < 150 && this.estado == 0){
+    if (dist(mouseX, mouseY, width/2, height/3) < 50 && this.estado == 0){
       this.estado = 1;
     }
   }
   reinicio(){
-    if (dist(mouseX, mouseY, width/2, height/3 * 2) < 150 && this.estado == 2){
+    if (dist(mouseX, mouseY, width/2, height/3 * 2) < 50 && this.estado == 2 || this.estado == 3){
       this.estado = 0;
       this.a = 0;
       this.contador = 0;

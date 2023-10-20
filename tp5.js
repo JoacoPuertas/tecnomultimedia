@@ -1,9 +1,12 @@
+//Video : https://www.youtube.com/watch?v=EZ-_i-rIhkM
+
+// Joaquin Roman Puertas : )
 
 let todo;
 let MowgliFotos = [];
 let tigre = [];
 let tig = 0;
-let arbusto
+let arbusto ;
 
 function setup() {
   createCanvas(800, 400);
